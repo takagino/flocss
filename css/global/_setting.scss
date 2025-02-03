@@ -1,3 +1,7 @@
+$color-text: #a6adb4;
+$color-main: #202124;
+$color-bg: #f6f8f9;
+
 $breakpoints: (
   'tablet': '(640px <= width)',
   'desktop': '(800px <= width)',
@@ -10,13 +14,13 @@ $breakpoints: (
   }
 }
 
-@mixin m-inner($w: 90%, $mw: 1200px) {
+@mixin m-inner($w: 90%, $mw: 800px) {
   width: min($w, $mw);
   margin-left: auto;
   margin-right: auto;
 }
 
-@mixin m-flex($a: center, $j: space-between) {
+@mixin m-flex($a: flex-start, $j: space-between) {
   display: flex;
   flex-wrap: wrap;
   justify-content: $j;
